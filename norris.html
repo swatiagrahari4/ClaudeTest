@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Lando Norris</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff8700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header-line {
+            border-top: 2px solid #1a1a1a;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .profile-frame {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .profile-frame img {
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .nav-btn {
+            background-color: #ff8700;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lando Norris</h1>
+        <div class="header-line"></div>
+
+        <div class="profile-frame">
+            <img src="data:image/jpeg;base64,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" alt="Lando Norris">
+        </div>
+
+        <div class="caption">
+            Lando Norris | McLaren Mastercard F1 Team 2026
+        </div>
+
+        <div class="description">
+            Lando Norris enters the 2026 campaign as a seasoned title protagonist, following a career-defining 2025 season where he led McLaren's charge back to the pinnacle of the sport. Now established as one of the most naturally gifted and consistent drivers on the grid, the British star has evolved from a promising talent into a commanding team leader. As Formula 1 transitions into a new era of technical regulations, Lando’s deep integration with the McLaren squad and his mastery of the MCL40’s handling will be instrumental in defending McLaren’s status at the front of the field. With multiple race wins and a hunger for his first World Championship, Norris starts the season with the full weight of the papaya army behind him, ready to turn his blistering speed into a lasting legacy.
+        </div>
+
+        <div class="nav-container">
+            <a href="leclerc.html" class="nav-btn">← Previous: Charles Leclerc</a>
+            <a href="piastri.html" class="nav-btn">Next: Oscar Piastri →</a>
+        </div>
+<a href="f1.html" class="home-link">Return to Home Page</a>
+
+
+    </div>
+
+</body>
+</html>

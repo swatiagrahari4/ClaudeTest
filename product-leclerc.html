@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <title>Charles Leclerc Signed Race Gloves</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #15151e;
+            color: white;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #1f1f27;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #38383f;
+            gap: 50px;
+        }
+
+        .product-image {
+            flex: 1;
+            background-color: #2b2b35;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        h1 {
+            color: #e10600;
+            text-transform: uppercase;
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .price-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        .pay-button {
+            background-color: #e10600;
+            color: white;
+            border: none;
+            padding: 18px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+
+        .pay-button:hover {
+            background-color: #ff0800;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            color: #e10600;
+        }
+
+        #payment-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 100;
+        }
+
+        #payment-popup {
+            display: none;
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 12px;
+            width: 340px;
+            text-align: center;
+            z-index: 101;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .confirm-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhUSEhIVFRUXFRUVFhYVFRUVFRcVFRUWFxUWFRUYHSggGBolHRUVITEhJSkrLi4wFx8zODMsNyguLisBCgoKDg0OGhAQGC0fHR0vLS0tLS0tLSstKy0tLS0tLS0tKy0rLy0tLS0tLS0rLS0tLSstLSstLS0tMi0rKy0tK//AABEIAPsAyQMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAABAgMEBQYHAAj/xABKEAACAQIDBAcDCQQHBgcAAAABAgMAEQQSIQUGMVEHEyJBYXGBMpGhFCNCUnKSsbLBJILC0RUzQ2Jjc6IXU4Ojs9IlNFR0k+Hx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAKBEBAQACAgIBAwIHAAAAAAAAAAECEQMxEiETBEFhUfAUInGBkbHR/9oADAMBAAIRAxEAPwDZ66urqzU6urr0m7UAXEYlY1LOyqo4liFA9TRIsUrjMjBgeBUgj3isL6XNuPPjWgueqgyqFvoXZQzORz7QXwt4mojZeJxWzFjxSTIgfLIMOZfnJYm4O0IBAQgGzGx7xVaLbUulfeifBwxLh3yPI5u9gWCILkLfQEkrryvVE2R0p46GwlyTr351yyW8HWw94NSvS7iFmw+HlXUGTQ+Dxlv4RWYinIT0/snayYmJJozdXUMOevcfEcPSnceNRmyh1LWvlDAtbnbjWBbv7fnjwL4WE2eSbIrFggRHQs5zHQew2t9MxPdUK8eI2dOjBskgAkjkjYMrK1wGVhoynUHyNLxPb0+Go4NVrc3eEY7DRzcGIyyAd0i+0B4cCPAirEhqdApQV1ATTACaTaSq9vxvMNn4Yy2DSE5IlPAue8+AFyfK3fWLydIG0i+f5Uw1vlCR5PLLl4edGhttG9+88ez4DKwzMTljS9s7ngL9wAuSeQrMR0t43PcxYcrf2csgNuWbPx8bVBb67zNj1wztYFVkDqL5RJdLkXPAixHK5FVoGq8S29Fbn72xbRiLqMjqbSRk3Kk8CD3qbGx8DyqRxO8WEifq5MTCj6dlpEVteFwTpXn/AHV26+DaZkaxaFwORcWK+7tVCs5JJJJJJJJNySeJJ7zS8T29Wh6ODWKdGG+kkcqYSdi0T2WMsdY2+itz9A8Ldxtatnjaps0cpWgoRXUj2KRQUegtQZegNDSM8oRSzGwAJJ8ALmqSid496cLgAvyiTKWvlVVZ2IHE2UaDxNDsrb2HxkfWYeVXHeBoy+DKdV9awza7HHu+OxWIEKSO6wgo8rskZ9lI1IyouYAsSBmJ771G7p7WfB4uGXUdoK44XjksDfmNQ3oKek7dvlP1uOxLLreZ1H7pyD8tWraWFRpVBICLiWkZcinOYMXhsCiEkXyBOt7PDXhVJwMhlxMZbjJOhPm8gv8AE1eMUmaMsBqTMfVtstY/6fhRThtv2f2HCD+8LeQiI/WqIKuPSNLYYaIcFR295VR+U1TCaqEsG7OEMoIBAYSI6FlDqJEDFMyHRgTpY86mt+MOjQZ41yrDiiqheAhxsCYpLf3Q/WAcr1HbkvlSV/qSROfJWBPwBqf2vgv2eaLUD5I4AtftbJxRX4wSL6VN7OFuhfaNmngJ0OWVR/oc/wDTrZYTpXnrovnyY9B9ZJF+Ab+CvQOGOlFI6ormmG2trR4SF55TZEFzbiTwCjxJIA86om7XSlHi5xDNEIM2kb9ZmUtfRWuoyki1uNzpypaCv9N2JJnw6X0CSNbuuzKP4azVq0DppH7TC3ONh91h/wB1Z5erhCOaFTR1jzX8FJ+7qfgDSVAGajKaLeixm2lALxuVIZTYggg8iDcGvSW6e1hi8NFMD7SjN4ONHHowNea71p/QttizS4Vjx+dQeIssg/IffU5HGxKaPSMbUqKhTq6hrrUAoaru/OK6rAYlv8FwPNhlHxIqxNVD6YJ8uzpB9Z4l9zhv4aoqpEECtho4szIr4eGOQoQGyJg8Vj5FueAaSSLNzAtVX34bLjWX6kWEUfu4WA/rVwlYIuI5LHibDU26vYsC87fT+NUvfk3x85ve4gPLjhoaePYpjsE/tWG/9xB/1kq0YLbil3hci/X9VEFVrlWxcs7u7HT2nVR5VSFpbAzBZY2uNJEPoGBNVYS1dJSn5RF/kAf63/nVRK1bekWTNiVHcsCf6nf/AOqqRoJZ90VLYbGqOPUkjzyPb8KlcJvXG2LwjGVuqZiMSjoFVGlgXCyOHvqjKA5GliCdSdK7uxtVcO8gf2ZYyhPI2OUkcrm3rUGnAUaNYtzvmdoQDMGyymPMNQ1w0eYHkb39a9G4M9kV5c2ZP1c0T/Ukjb7rg/pXqHA+yKVDNem/aRCQYcH22aRhzEYAAPq9/SsgbvrRum1z8qhHcIj8XN/wFZuacJNbc2u+KgwxkOZ4utiLHiVHVFCeZsbX77VCLSov1fhnPvyi/wClJCgHWyxeZBzzD3ow/WmRW2nLT3U5wMmWaM/31+JAP40nih23+2/5jQBBRpYuyj87j1U/yIog4U6TXDsPqyqfR1I/EUA3U1NbobT+S4yCa9gHAbX6D9l7+QYn0qCQ0pQHqyFqcKarm5ePM+Dw8pNy0S5j/eUZW+INWJazWUrq4V1IDtWc9Nl/kItw69L+WST9bVoxrO+mhb4EeEyfEMP1qoVUraeLs2PjtYJDO5YsoUnFYHCxRIBxLEo3DnVV27iUxONZ0N1fqADr9GCJGGoB0KkcO6mG0saZXMkhGYhQToPYRUHwUUjg5AJEa+gdfxF6qTRbFjYqQRxBB7jqNeB0q17Q33mlh6rEYaJwVIVirJfTRhe+o43FvSqtHKUcOpsysGU2Bsym4NjodQOOlWfa+/mJxMRTERwvmUqGyOvrbNYnv0tRYIJtKQYlMbPf+rTAhf8AiMAfjmqsXqb2G5+RbQXmuEv5JiB/MVCUQnCrluTs3ZjoXx0yK1zZHlMYA52Ugk+tU2rJufsGHGMetkK5SNAyISCL3BYG9F6OB32j2YpUbPaQnt9Zcs0fdlyM/aJ48LjhXoLYb5olPNQfeKwTfjd7B4NVOHxXWMSQ0LFGdVyk5yyWsLi1iNb+Fbzu4loIweIRR8BS+wZF02j9riP+Efg5/nWcMa1Dpzj+fwzc0lHuKH9ay96qEdBf2e/+Pb/lX/SmgpdJ/mmj/wARXH3WVvxWkKAI5oQb6nidaB+NcvCgDd1Hgkski/WVferqfwzUSkxQBo6UFESjigNu6HcXnwOT/dyuvo1pPxc1oaGsn6Ep/m8QnJ42+8pH8FatGazvaoXBob0UUNIypqgdMS/+HueUkX5wP1q/mql0lbPOI2fOiglsocAcSY2V7Dzy1UKsj3U33kwSCGLBYeVrk5urbrm1+kVN3tew5C1Qu9e08RipRLiIFhbLYBYDDcA8Tm1c68SfdS27u9eJ2fm+TlLMcxzoG1sBx0NrDhe3vNJbyb14vaGX5TLmVTdUVVRFJFiQALk25k1WvZbRGGxBR1kFsysHAYBlupuLqdCNOBq1bU6QJsRC0TYfDjMLMwViNeJCMxAPvqqQxM7BVBZmIAAFySeAA76u2zOjHESpmknihY8I2DO37xXQel6Lr7ibQe65BixyH/0bOP8AhSRm/wAagjV2n3d/ouKZ5pVdpYZsPliDFR1iHLdjqSWVe4AVSDRANTrA7LlxJIhjMhUXIFr2PK514U0FS+73ybM3yl3jGUFJI82dXB4oVBN7E+6nSR5wjh+qZSr3ClWBBBOliD516n2ULRgeFYRtrbMGNxWASHrH6po43mlCrJN84hBNuVm4ge0dOe77NPYFTTZ303YEtBHMB/VyAH7Lgr+bLWMSV6d3m2euIheJxdWUqfIjiPGvNu1cA2HleF/aRiPMdxHmLH1pwjGhNAaC9MOY0Aoa6gBpMUeutQACjCgoRQGm9CcgEuJHeUiPuaS/5hWwxGsS6G2ti5RzgP50ra4TWeXaocg0aiA0NIzg02xKXFOKTkpwmPYPo0jbEzmYnqVktEinLmDDP2m4hVDBdNSRTfBPsWScYaHCmVgSpbI7KGW98xZs2XQ6kWqydIe8c+znieNEeOQOrq4PtLYqVINwbZr8eA5VQsd0mYtrlI4Ir94Us3vJt8KerR6aLg9hYaFg0OGiRrWuq9rxFxr/APlQ8GDxWHm6/H7UiSIZvmhlRWBGgytwGo5nhrVPji2vjVLySyRQ8S8j/JogPJbEj09aamHZmGPaeTHzXtaO8UBbuGY9t/S96Ug2mN9d4MJiIXhhd5HurXVGyAKQSWZraWB1F+6s9NX2fD46aEho8Ps3CEahgsWZSOBzdpj929UJhV4lQinmzHCyqWEdr2PWrnQX72UcaZrRhTJd9nIs20sKsa4Uqi9YXwiFFNrn5wH6YYKLd2Yc9N1wGiisp6L9giNOvbVpALeCcQB58T6cq1fD6AVJjzpcViXS/snq5o5xwcdWftLcr7wT92twasr6bYz1ELcptfVG/lRAyA0Wj0WqI/wGxpZhmUKqfWZgBobGrFgNy1Iu5kfxUCJPvyWvT7o2RHR83tI4t4Bx3e461Nby4uExshlbMpIyKbZmPC9x2lFu49xHGuDk+py+X48Y3x48fHyqEbcJTwSceTwH+KqvvPscYSVUHWapmIkUKQbkaW0I04+daNuhjurw4L+yGtr4kcB5n41A9LwvJhnta8cg9zgj81Z8X1PJ/EfFl179/wBDyww8PKT/AGz+uFBQivTc7S+hnDHrJ5baBEjB8SSxH+lffWwQVQuivBGPBKSLGR2k8wbKp9y1foRWd7VC4o1FFdSM6ojUaitTJRek3ZkE+HU4iYwxxyB2dULtYhlyqo7yWHOsxXeHC4ZguzcHeQmyzYn56Yn/AA4hop8vdWudIOGhkwcgxDMkQKMzILuArqbKOZ4etZFNvfHhwY9m4ZcOCMpme0uIe55m4XU8O14WqoRTGbJnltPtfFtCnFUY5pm/y4V0T3eYocJvAEPUbIwNpCLGZ167EsNe0Poxjv1uBfupLD7sm3yva07QRtqAxzYqbvyqhuV9Rp4caDE75Oq/JtmQ/JYmsvY7eJlPAZn1OY8lufGjsHG1t3xFeXbOPbriLrBEwmxAuNLk3WMeHDxqjA6VZNtbrNg4esxkoTESWaPDj5yUgntSTveyDjzJI87VsU4Qy0aiLR6YbpuHJfCYf/KQe4W/SrxCdKoHR4f2OD7J/M1X6CoMuaqHSFFEcLI00XWolnZM5QkKQTZ11FtatxqC3nYiCRgFYhHIDaqbKTZhyoDzji5EZ2MadWhYlULFyq9wzHU+dIU/21tBcRL1iwRQDKAUhGVCQSS9uZv8BTA1ZLb0b47q53jLAB0vrzQ3t7ifdVt2hu0kiOQbMDmVrklri7B14e1c3H1qynCYlonWRDZlYMPMc/CtXwe2kxUKyJmvmAdQxUqxBuGsbkcufnpXm/VYZ4ck5MPv2347LPGoPY2PlkDYcrmBCqGtqnaFi2moHG3HT3E6XsQpmw6DisTMf32AH5DVhwaDDlnayISXkJuwVBms2bvY6X8xyrMd4tqnF4h5jexNlB7kXRR7tfMmjixnJz+cmpN/5voZesNVG0thMOZHWNeLsqjzYgD8aRFWPo+w/WY+D+6Wf7qEj42r0qwbrsvDCNFRRZVUKB4AWFS0Qpnhlp8grJY4oaChpA4oGoaKaole3z2e2Jwk0KWzOhC3Nhm4rc9wuBWSTYvA7I7OHy43Gi4adh+zwtwIjX6ZGuoPPXurVt/cV1WBxD8D1TAebdkfFqzDo53AGNAxOII+ThiEjHGVkNjm5ICCLcTbuHF/b2Sp7VixmIUY2cSOsjiNZGt2mszBI045ey3si3rWh7J2VFsHBnHYhQ+MYZY1PBHdSVjXxABLMNbAgeM3tHCDFbYw+Gy/MYLD9flHs9a7AIMvDQCMjyNE2phP6Q2xHE39TgoFlZe4zTElQR36Kh/cPOlaemN7efENO7YrP17EM+cWbtAMuncLEWHcNKjRxq/9M+FKbQEltJYIyDzKFkYegC++qDWk6SMKOKItHjUsQo4kgDzOlAbpuJFlwsAt/ZqfUi5/GrxDwqubAgyqqgcAB7harJFWZjmo3aqXQi19CLc/CpI0yxw0ph5v3hfBlkOESWMFT1iSEEK9+EZuTbjx8Kiqk95cEYMXPGfoyMR9lu2vwYVFk1ZBpxgNoSQPniYqfgRyI7xTQmgvSsl9U09t3eibFoqNZVHtBb9phwJv3eFQVFzjmKGljhjhNYzQt32MKufRQB8u1/3MlvO6fpeqWKuPRWf29f8ALk/AU70G6wU7WmkFO1rJQ9DQV1BnFAa6gNMlL6VoWfZ04XuyMfsrIrN8AT6VWOhfehQDs+U2OZngPMnWSPzvdxzu3KtE3kw/WYeZPrROPepFeYUkKkMpIIIYEEghhqCCNQQdb1Um5pPVb9gAE25jFv2pMHh5F55UbI1vW1MNi7Yjg23tDDysFaZsMYixsGKQJ2LnvOcEDwNZbPvnjXxMeMMtp44xErhFF17V862ytfOb3FuHKoTFYl5XaSRi7uSzMxuWJ4kmjxG2q70bj4n5FMrds4WeWXCm+Z2wsgDyRHicykGw7ylhoayOrbsfpH2lhVCLOJVGgE69ba3J7h/exqqzOWYsbXYljYWFybmwHAa8KrHcFAtSm7MHWYqBf8RT93tfw1FirL0ew5sah+qrt8Mv8VO9E3PY6aVMpUdsxbKKk1rMwmmuKGlOTTfEUQMF6UosuOJt7UUbfF1/hqmmtL6YMILwy992jP5l/BvfWamrnRD4bDtIwRBcn0GguST3AAE+lWvZ+wkUAhc1iAZHAOpIHZQ6AC/n40y3Rw2YSMALlo4wSbWDZifeVT7tW0Rm7CyqCMrDNoDwBGmotYX8uRrj+p57jfGO7g4pMJnZvZKbZ1g93YhUB7rG4N7j0qF2lu2thcBGIuGTQX5OnC1zxGvnwq0rhyw7TWLBAQCO5mzaeV6PLAGBF7lxa5BOVO4kXvc6kD+VcWH1GWN7dFxxy9ZRk08DRsUYWYGxHxFvAixB5GrP0ZyBdoQ37xIvr1bH9KZ72x9qN9NVZNO/qypB90lvQU56OBfaEHh1h/5T168vljt5vJh4Z3H9G+wU7WmcBp2lQRQUNFrqD0cUBoaI5pkabQYZD5GvK5Fhatc6YN5XiyYWFypYdZKVJDZbkItxwBIYn7I7jWQsavGJrr0FdQXqiDQCuJrhQBqvfRVBeSV7aAIoPmSSPgPhVDy1oHRPMM8yH+4w/wBQP4ill0cbNghoKfLTHAHS1P1rMONN5qcmm09Bs56U8MHwjnvRkcfeyn4Maxhq2DpbxuTDCPvkdR+6nbJ94UetY+1aQjvZm0mgLWAKtbMp78t7ENxUjM3hrqDV12RjetUFmWxXMpci+psVJ79bj0rPadQ7RlQBVewF7Cym1ySeI5kmsebhnJPy34ebw9Ze41aFY7AmSPl7YOttdb+dR228UFBKm6qjyNlYa5VJtfW18tvUeVUH+ncRa2cefVxX/LRZdt4h1KNIMrCxAjiFxyuEBHDnXJx/Q3HLdy26P4rjk9S7/sLtLaLzsC1gBfKo4KDx14kmwuTy5WFSe40+TH4Yk6GTL99WQfFhVfpbDTFGV1NmVgynkykEH3gV6OvWnDbbd16fw1PEFQO7O1VxcEcy/TUEj6rcHX0IIqeSsVjWrrUYUa1LZ6HJpnjsSsas7EBVBYk8AALkmnTVmXTJt0xQLhUPamuW8I0IuPU2HkDVz2ist3n2wcZiZJzoGPZB+ig0Ue74k1Dk0ZqLatUOrq61dQAUNdXUAN6mt0NqfJsVG5NlJyP9lu/0Nj6GoQUYUB6b2XNcCplDWe9He1evwsZJuyjI3O6aXPmLH1q/QtcVkoqaa4k6U5NQ28W0Fw0Ekz8ERm87DQeZOnrQGNdK20hLiljX+yUg/afKSPQBffVHNL4vENI7SObs7Fm82Nz+NONhzRR4iN50zxBjnUqGupUj2ToSLgi/eBWiTBRc2Gp5d/upUYaQ3sj6KznstoiGzudPZBuCeAtVoxu9sJi6uHDGG5RrxukVimVsvYU51zmW/s3DDQcAxl3uxGcOixIQznSNTdXkkkaNr6FSZCDoCbC543N00euw8SVzdS2XLmzEqoC5c92LEBRl7WttNaTOyJw0idU2aK3WKLFlvw0B7X7t+fCnp3oxWQRh1CBQgXq0ZQoi6nKA4OhSwI77X40zO1p+saXrWEjm7MLKScpX6NraEjTnR7HoOK2NiIsxkiZQoJbVTYKYwx0J4GWL74pOLZ8pYqI2uFVyLWsrhSrEnQAhlsT9YUq22cQeMrG4KkMFYEN1dwQwIIPVRfcFcm2JwSRJqUVCckdyi5cqk5dQMi2vwyij2PS99EO3erkbCOdJLvHf64HaW/iq3/dPOtliNeXdm41oJY5l4xur6f3SDb1tb1r03gpQ6hgbggEHwIuKzzi8T0UN6KKGs1Blawrzhv7tI4rGzScVVuqQ92WO44+JzH1rct9dr/JMJLLezBSE+22ifEg+lYVHgFGHMj5r5gBwsSRnkzcTmCZdNOB412fS8PyW+9ajDkz8YrrUvgMI00kcS2zSOkYvwu7BQT4a0gdam9zIi2NhA7utb1SGRh8QKiqSuI6O8UBdHjYePWA8xoqMBprxqMxO5+NjNjDm+xJET9zNn+FbfPbUWt/Wm2vPIp9b0pin7WXmpBHd22Vb/j76y86rxeecVsyeK5kgmjA4l4pEHvYWtTSvQE0igO4UCxvcAA260KdbX4BvA3Nefk4DyFXjltNmjvZUiLNEZFDRiRM6twKZhnv6Xq44XYc+E2i5XAHEQCRhlaIMnVObjq3fshlBsDfuIPG9UNhcEeBrcn2hmEd8Y0LvAkvUqsDOFK3Z7NGzHvv3aHlSzujkMNgbP/o3GvhlN4Zl6+C51GUhZEPMjMmveLd960rBPcVh29Ek0EuGxoxZxUWY9Wxydn66DJZbMoOoA9mx4VsOwMWssaupurKGB5gi4qb+ppljWTdNO2rJHhFOrnrH+yp7IPm2v7laliZQqknuFectr4ptp7QZg2kjlUNs1o0BK2Gl7hSbc2p4lUAxotS+9GwzgZuq6wSCwYMFZOPcVbUEXHvqIrRIKGurSt1dyMHisHG8jsZZAXLRSC6C5AQqbi40vcXvpSt0cm2a11XjeXo4nwymTDsZ4wLlctplH2Ro/fwsfCqRRLKNBRCxAAJJNgACSSeAAGpNGkiZCVZSrA2KsCrA8iDqDVi3d2h/R8LYtUVp5GMOHzi6oqAGaW3fqyIPEN4gwGMxTzSNLIxZ3JZmNrkny0HkKAItehtwcX1uBw7XuRGqHzjuh/LXnkVs/Q7jc+EaM8Y5WA+y4Dj4l/dU59Hj20haGiqaGsWrL+mLaAY4fC30LmWTwRRbh5Fz+7VG3plKIkIOgUHgB2nJdz7IaxIBsxNhJbThU5t5W2htSbq3ReryxKzEZQy92umpEg18tb2NT3pMnXssrBpAe0QLAnQA2AFrqqn1r0eHPHDhym/5r+/+uXOW5z9EOKtfRol8aDa+WMn0MsSH4OaqtX3okgDTykjTKiHycStx7tYlrmy6aTtp0SCyMLm6qQbWveQE25eXdXMQZDqP7MeRDM5+AFJ43FxwZn7RWMKCBbQBCBlzEAntD3c6GUjLnF+0ucA6EDq7Aefa+NYNUDt6UrgpnvqYH17J16qeTipPfasTtWzb+sItnuBfVFHvMcNrDThKaxk1px9M8gCtG2PJhZzhca+LWKWCJYpUZlBPVqyhhc3sQxOgN+GhrOa6qs2UulmxW1YH2e8ANpBjGliTK39Ub63tYe22nHSr70RbZzwGEntRG37jXKn07Q9BWOVaujbGdVjVF9HR087DOPyUXH0e2odKW2/k+CdVNml+aW1we0DmII5KG+FY9um0oxCNAoaQEZAbAFgQbXJA4A99WHpX2p1uIjiB0jS55ZpP1CqPvVE7kw3lzZcwUFiLsLKqkMbqCfpjQA/qNvpsJlnJf36Z8l1DTezGvNPndVRstiqgAA53Y+zpxYnTn61DU62mR1rWuAMq2JBIyoqkEgAHhxsKbGMgXsbdxtp76XJJM7J1unjvXsFXLd7fePArGItnwFxHlklJtNI+a7N1uUkKbL2LaEceFUyhrOzamm7L6U8xYYuHQsSjQWuq9ysrEZrfWB9KXwU2yNqzlDAyykFgTeJpbC7XMT9ogAmx1sDyNZZS+CxLwyJLGSrowZSO4g6eY7iO8EipuE+x+Sy9JWHaLFiLsiJIk+TqgsqxG+lvrZw9z3/CqpWg70H+mMMMbEhSbDqEnitoVc3EkbnioIc2Otr8taHNAU429CD+FPHoUmK0XobxuXESwn6cYcecbW/Bz7qzoVZNwMV1WPw5vxfIfJ1K/iRRl0J29EodKNScR0pS9YNXm3Ye8UmEkkkCrJ1gIbMXBuSTmVlIKtqdfGonGYgyuztxblw0AAHuApM0WujTEFaj0PQfNyvbjIy/cSIj/qtWX1MbF3kxGDBWJlyls2V40cZiACQxGZbhV4EcBSym4J6a/vPhpGiYAcWJPa0VbghjmIt7PDxp/g260XdBlsQobXNExARmHdcJe3dcd9ZhhekvEqbvEjHTVXlU2HhIzr3nuqQw3Sao1aGQE8bPE4vcnhkTme+s7hV+USPS5irYZU+tJGPQ9Y5+MK1ktWvfbelMeIwiOuUksXCrfSygBWbm+txx4VVKvCaicr7FrqGgq0uqR3em6vEwtycfEEfrUdRkaxB5EGgzvbWL66eWT6zn3Dsr8AKfbvYqNQ6vmOYMoyhCRmyi924CwOo1vaoWlsI6q12XNbgLkD1tWnFyfHl5aTlj5TSUxHUqS8LoxJLXfiLkk2U6UxxEcsmpZWHdZlI9AOFSOzxE5PzcdlUtYBibAgAnw1FEmxBc3zwnuAynS/K9YqRnyCQa5TbmNR8KcRRwoLvdj3Dx8aketaM5c4zXsQq9/IDhTl5y19AoFixYXsOQFqNhDy7SGXKsMa8dbXNvM0hE0jkKCb+At77d1SUUbnPJfq4x32HaI4Bbjv8AChkzpEHvrKTY39lFNreZNAI4faUsSyxROckqZJbjMHUG4tcaWN7W11POo+RWJ4H3GpaPBsFNy+ax0BIA8z+NM0lKNlBLm9tGa3kP50wY2p1s7E9VJHJ9R0f7jBv0pbajWdkvmAOhJuR4UyAoD1FhHuoI76cXqI3bmz4aFucUZ96A1K3rmbPKxFBWlY/otYf1WI9JE/iU/pVYx+5WOhJ+Z6wfWiIcfd0b4V0TPGsrjVcoKVnhaM5XVkPJ1Kn3NrRCKpItdRrUFqALQGjWrrUASuoxFBQYK40a1TG6uy1xWI6l72ZH4aEEWII8aVuoJNoc0FqtW3dxsTh+0imaPjdBdx9pOJ81v6VWGjIJBBBHEEWI8weFEsvQs0GCZkOZTY8PQ8RTl8cG9qNSeY099NLUFqYSjbVuQ1mBFuBF7jh2rXJ8aUj2wASxDm4se0OHG3wFQ9DS0E5LtqMpk6osNfabnz50xO03yhB7IuQOV+XIUxFdQD2baLP7Wp4XufjSKTBfZFjz/lekbV1qAPeuWgFGFAb/ALgTZsDh/CML926/pVlvVJ6Ln/YIhe9mkHl84xsfQj31cr1zXtvOgsl6RfDA91OaCg0bPs5XFiARyYAj41DYjc/CNxwsPpGq/gKtRopFBaUd+j7BSOAYMoJtdHdfhe3wrpuiHCH2Zp19UP4rV3jHaXzH41J2qpamyMp/2OR3/wDNSW+ylGboZi7sVJ9xPWtTo9PypajB8b0XzK7LHMpUMQMykG3de38qbP0ZYwcHhP7zj+CtsxC/ON5/oK7KKn5Mj8Iwz/Zxjv8AB/8AkP8A21Y9wdy8RhcSZpwgURsqhWzEsxXw0FgfeK0wxjlRkQcqLyW+jmEhD5MKjNrbu4fEj56FH5EjtDycaj0NT4FcRUKZtjujLCN/VtLEfBs49Q4J+NVzGdGGJX+rmik+0GjP8Q+NbQ6im8qDlVTPKfcvCMIxW4+Pj/sQ3ikkZ/Eg/CoLF4R4mKSLlYcRcG3A8Qbd499egNqHLFIw0IRyD4hSRWTz4GN75lvo7Xu17gIbk3udXY+N6vHlv3TcJ9lfw2xsRKgkjgldDcBkRnFxxHZFJS7OmT24ZV+1E6/iK0ToWkPyjERX+b6vPlOozh1UMORsbeNhyFari4VCMQBcAkU8uSyljhuPLxsNCbVwr0bicMmVRlBuNbi/Ea8aZNsnDtxgiPnGh/Sl834P4vywGnuA2ZNPbqoZHv3qjFfVrWHvrcY9k4dTcYeEHmIkH6VIwqOFHy/gfF+UJ0a7ImwuFKTrlYys4W4YhSqDUqSL3UnjVvtSUQpasrd+1yaf/9k=" alt="Charles Leclerc Signed Race Gloves">
+        </div>
+
+        <div class="product-details">
+            <h1>Charles Leclerc Signed Race Gloves</h1>
+            <div class="price-text">$1,500.00</div>
+            
+            <p class="description">
+                Own an authentic piece of Charles Leclerc's race kit. These fire-resistant Puma racing gloves feature the official Scuderia Ferrari branding and "16" driver numbering. Each glove is hand-signed by Charles in silver ink. These gloves are identical to the ones worn during the 2025 season and come presented in a custom acrylic display case with a certificate of authenticity.
+            </p>
+
+            <button class="pay-button" onclick="openPayment()">Pay $1,500.00</button>
+            
+            <a href="shop.html" class="back-link">← Back to Shop</a>
+        </div>
+    </div>
+
+    <div id="payment-overlay" onclick="closePayment()"></div>
+    <div id="payment-popup">
+        <h2 style="margin-top: 0;">Secure Checkout</h2>
+        <p>Charles Leclerc Signed Race Gloves</p>
+        <p><strong>Total: $1,500.00</strong></p>
+        <input type="text" placeholder="Cardholder Name">
+        <input type="text" placeholder="Card Number">
+        <div style="display: flex; gap: 10px;">
+            <input type="text" placeholder="MM/YY">
+            <input type="text" placeholder="CVV">
+        </div>
+        <button class="confirm-btn" onclick="processOrder()">Complete Purchase</button>
+        <button onclick="closePayment()" style="background:none; border:none; color:#777; margin-top:15px; cursor:pointer;">Cancel</button>
+    </div>
+
+    <script>
+        function openPayment() {
+            document.getElementById('payment-overlay').style.display = 'block';
+            document.getElementById('payment-popup').style.display = 'block';
+        }
+
+        function closePayment() {
+            document.getElementById('payment-overlay').style.display = 'none';
+            document.getElementById('payment-popup').style.display = 'none';
+        }
+
+        function processOrder() {
+            alert('Order Received! Your signed Leclerc gloves will be shipped via priority courier.');
+            closePayment();
+        }
+    </script>
+
+</body>
+</html>

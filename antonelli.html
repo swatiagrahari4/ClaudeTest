@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>Kimi Antonelli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #00a19c; /* Mercedes Petronas Teal */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #00a19c;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #00a19c;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #007a76;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kimi Antonelli</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Kimi Antonelli Mercedes 2026 Portrait">
+            <div class="caption">Kimi Antonelli | Mercedes-AMG PETRONAS F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Andrea Kimi Antonelli enters the 2026 season no longer as the "rookie experiment," but as a 
+        proven podium contender for the Silver Arrows. Following a debut year in 2025 where he 
+        collected 150 points and made history as the youngest-ever polesitter in any F1 format with his 
+        Miami Sprint pole, Antonelli has silenced the skeptics who questioned his leap from Formula 2. 
+        Driving the W17 under the number 12, the young Italian has spent the winter break working 
+        with performance psychologists to refine the consistency that occasionally wavered during his 
+        rookie campaign. With Mercedes appearing to have mastered the initial energy deployment 
+        challenges of the 2026 power units, Antonelli is poised to challenge teammate George Russell 
+        not just for internal supremacy, but for the World Championship itself.
+    </p>
+
+    <div class="navigation">
+        <a href="lawson.html" class="nav-button">← Previous: Lawson</a>
+        <a href="russell.html" class="nav-button">Next: Russell →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

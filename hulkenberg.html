@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>Nico Hülkenberg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #333; /* Audi Charcoal */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #ed1c24; /* Audi Sport Red */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #ed1c24;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Nico Hülkenberg</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEBUTEhMVEhUTGBgWFRYWExkaGxYWFhkWGBgaFxYYHSggGBolHhYWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGBAPGysdHyUtLSstLS0tLS0tLSstLS0tKy0tLS0tLS0rLS0tLS0uKy0tLS0tKystLSsvLS0tLS0tOP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQYEBwECAwj/xABDEAACAQIDBQUFBAcFCQAAAAABAgADEQQSIQUGMUFREyJhcYEHMpGhsSNCUsEUYnKC0eHwCCQzQ5IWJYOis8LD0vH/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAiEQEBAQEAAgICAgMAAAAAAAAAAQIRITEDQRIyBFETImH/2gAMAwEAAhEDEQA/AN4xEQEREBERAREQEREBERARE6VaoVSzGwAuT4QO8xxjEuwze57x1sLcbtwErW1d7sOQ9NKhLWspU8c1wSDwBFtL/ildxG8KFhSL3VQe7c2yjiT4DrxJM56+SS8dM/HbOtmUqqsLqQwPMG4+M7zVybRYIKiV6gVjlporECox1FgLkjyHD4jHG+eKpVgrVDWAzF1yBR3bmysLnhpz4ST5Z9tf4b9NsxKRsbfte0ShigKbNTLCpfRmU6ggDukgggenSWvZ+06VcMaThshytoQQfEHWbmpfTnc2e2ZERNMkREBERAREQEREBERAREQEREBERAREQEREBERAREQERECP2ttSnRW7tb8Rtfs1N++45ICDc8NDyBI17vlvkiC2HquXHvG794G98tzkI1RhYW8RIj2s7VrUcUyCtVVKtMG2dQhsbWC2uANO9e91PnNaUrPwa3hbQ24cTb5zGq6Zz9rFR2wzMSSGLnMWHM8SSOR0J8547QqlDUIFw+T4KczL4Amxt4SIKsCDkKN1HDMOBHnpJnCYgPYMLg8Afp4eHhpONnPLvPPh44beKqDmUgPbIrNwpqeOVfxniT+qBoBLFsvH0s9NVGd30zMfQnTgOg5W4X1lYfYDl2yAkeHznCbNrUzwYE6X1/rhJr8a1M6i/wCFelVN7XCE29NOJ6gCTW5FcLjnNR7GopUa6Fyy2HnYW87yh4Wu9EBcrAnQaaePHThf48J71sdVpVKVWkM7KwaxOndtcW4C4JF5nHizi7ni9b+ieeGrh0V11V1DL5MLj6z0nseEiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAnBnMQPnT2w13baL5gFNFaaDW9wVDggEfrSF3b2WHHaOS1zbX8zLN7e8Ll2jTcf5tFSfEozLf4ZZX908Tpl+E4/J6r0/Fy2dXTZuzKdiCoP0+EmKOyKGhyLMDCpoCOknsCwZR8xpPJ2vdyRlbPwFJRoo1mW+Bpnig+E60hbSZIPjNOVYVfZ1NhZlBHl9JRG2crbRp0CSKbOqmx1CE6gHly+M2LVOk13h6hO2aQPAVkGnmJrH7M7/Vu5VAFhoBOYie188iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgaY/tD4I3wlYcLVaZ8+4y/981tsVsmUnQHj8ZbfaHvdUxtSrhnVFTD137MgHNZC9PU3sbgE8JXdmYA1cqIQLczOOrK9OcazZKueF3moZO8pOXTgdZj098KKtdFI6i8wKG5FRj9qxdTwyC1vjONqbnUkA1dbDgSCT52H5zhzD092vybTIoJiSGyWAa4tcHgw9dPWRi7/ACZ8gQeZdRb0JkjsLCrVwC0qi3QgKR5fzEwaO4dBWGaj2gQ3U9odNSdQTrx53mJP7a0mcNtoPobd7gVII+IkHSwX++qJtoWRvUAm/wAr+ksOH2DRpnNTXszzCnQ+YN9ZG45smKWqFJNNcy5eNxcS5vL1m5/KcjaESJ3Vx7V8HRrOMpqrmsTcgEnLc9bWktPdL2dfO1PxtlIiJUIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgfOntM2SuH2nXFrCsy11PQVb5z/AK1qSE2TieyqHwNpuT2ubrtiaKYiipepQuGUC5ekddANSVOthyZppI07G1rfly5zjrPt7M77mX7jauwtpKaepld3n2tT7Sz3yhTaxsCeGp6SJ2biylAG/Fsv1v8ASY21MMmJa+YJbTU2AA85wmfL0XXhdt196sMmFtUbJl5sfz5yy4HeBGZedOoPsqljYkcV8/65SibB2BSQrnbDvSsc16itc9bCXM4miUFEGmyHRVVhpbhltwtM6/4vPHmJnE4gWlcxGEY1KdZSwOdkYZjY07A6rw0KnXxkgtPuC5JK8zztpJLYmz+0sbHLe7choTpfn5TMl1eH5TE6sexcP2eHpp+FR6X1/OZs4E5n0JOTj5dvbaRESoREQEREBERAREQEREBERAREQEREBERAREQEREBERATTft1w4XEYWrb36boT+wykf9Qzck1L7ex3cJ/x/wDwzOvTWP2a72TUUg0n1UnMD0P9Gdn2elJg6Uw2t9QG+sicJi8tiOIMsWztrqtjxH3h/wDZwssvY9mbLPKxbvbYdmUCnTtw/wAJAR62lrxOBR0s6KGBuCFAKnwNtJEbM3jo5QNAdBw0mbjtsKFvcdfznDVrvGTWq5UueA0Hp4S5buj+7UxzAN/PMbzWmzsU2Jq6C1OnY/tEcB5XmyN23vRt+FiPofznT4PGnn/k/olYiJ7HiIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICan9ulZD+ipmGcdo2XmFbIAx6C6keh6Ta5M+W/aLt3ttrVqobOt8i2Nx2aEquU9CBm/ePWTXpvHtgGlY3nS/T4TJpkMtxredMtjOTvY9sDTrObUw0uOy91qmhquWuQQvIXmFubiVDlXsOk2HguF/mZx3b3jt8eZzr02ZgVpIFA85M7vbUprXbDMQruvaoCffA7rADmRZT6+Ej1muNt4mpidrUzhrN+hlXvew+ydTUJI5ZmCH9ky/DP8AZPn/AFb+iV3dne6hi2qUlZVrUWKvTJ49GT8Smx8iD4E2Ket4CIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgInBMrm8e+uEwgIeorVB9wHUedr9eVzAskhts7zYbDXD1FLgX7NSC3hcfdv42mn9v+0ms9Rir1DTtogy00Hj7udvU+kouOx71CXe1zrYCyjyA/O8NTK1b+b7YrEq6PVVaTXApUTYAagdo17udRe9h0UWmu6jZ6ebiyWvc625SVVkZdQAfKRuOwtjmXUHiOhksajjD4lqdiNVPLl/IyT/AE1HFxdT0I/MSIwrDgdVPET0aiaYzAm3LWZ41+S67v8AYXV2rIpHIsAfnLx/tZgqSd/E0vJWzH4C5+U0zh8QGWxUubXOv8dD5TN2HsWvi6hTDYe5UZmsQLD1Ki5OgF+JHAazGvilveuk+Wyelx277Q+2Bo4MMqnRq7Ag25imOIJ6nUdJn+z/ALLD4atjGa2Vmp20sadNaZAGmYlmqcAbHIL8JDbU3MNHDHE06xdUCrVoOCtRHcgAMDqB3hdTYgdZFuj9mtEMQpszIDYMwvYkcNLmbzmSeHPWrrzWZu5XpnEVXrPkqVDmVr2GYsWJuNBryOk2Pu9vrWoL/egWp6WctfQ/hc8/1WN+k1U1ECwI0ktsva9WimTItejc9xuIB5BuFvAgzVjL6E2ZtOjiKYqUKi1FPNTe3gRyPgZmTRWx96sNScdyphzwVwttOhKG5HoZsfd/fJaw71nUf5tNg3+un76nyBjrNyt0TzoV1dQyMGU8CDcfET0lZIiICIiAiIgIiICIiAiIgIiICIiAlN3u36p4YOtMqzJo7m5VCdLWGrtfSw+otJLf7bLYPZuIxCGzolkJF7O7LTQ2PGxYH0nzDi8Q9cBndnsTfMbksxuWJOpuSb35w1mdWjeDfzEV6hKVHNuDva48UQd1PQX4XN5W6lUuczks76sx43njTpCZVVAtvKI08Kr3a3xmU9Lu+U6YKgM1zM+uNLdYESqzI7K6eRvOoSZeHHcMDAfZ6sWtoQARbnYazwGFYh0vmtqQeh1BHSSKNlIbpG06TKRWp6kDUfiQ8vhAhKGINB7Fbr0I4eUteyd5Ky0bUAqhTcutNQ+a3J7Z9OGhkFtJFektQXtY8eVuXpczI2fs0qo75/EQul/NjwEgm8VtbFV2LV6jscovdtCFJKiw42LG2nOeFG5a9+JPwWw+F806odSR4Kvi2pJN/Q+kzKNDLrYgWAUnmBzHmYHhUS5AnfsrcDO19Zw9USo4D3FiLxhqjUnz0Xai/C68COhHMeE7UDPUpflCpfA77VkIXEItRTYMyd1iQbhtDbMNLCw4aWmyt296c6A9oK9PTUX7Wnfk6/e+R0+9NMV6YsR4TDwmIrYeqtSi5VtbEdOdwfeXwMnP6H1FhcSlRA9NgytwIPofUEEW5ET1mq/ZJvPVrYitRq5QKi9qiqLBSmVCOpuLHX8PoNqSsUiIhCIiAiIgIiICIiAiIgIiIGrv7QO1RT2emH+9iKgNv1KWpP8AqNOaBwdfK2vunQ+XUeI4y++3bbJrbUNEe7hUVPNmHaMf+YD0mumXS8z9uuZ4TNDjY8tPmbEeHP1nfFvwmJgal8vl9NPpaeuIYzXRZNz9nrXapmUvkFPKvbCldqlRKYu7Iwtdx0llxe6CM90rLTDM1NFdlP2qIDVUsxRmUOSoZUJ0vltqaFs6u6JUVTZaoCuLDVVZXA14d5VOnSTTbexJVh29Xv2D/aEZgAF1sdTYAX42EiJfDboKQGaqzLVGfDhFAeuq0e1cIpJs4JSnbXUnjaxk8FsPDil2RujO1NslR07SlVbD4vLSZwF0LpSNiB74BF5SFzuoALME0AuTlu33Ryu3ITJoYGoELFCFFrm3DMWAv0uabD92EWLG7Bp08C47INXCUqjfaDNTu2JVzpfugJTuvUjnKpgq4y2bTKbenjO/Z97hz/hPdMKMx6OLesohtoUMiso1R2uvgTow+YkxUp2ogD1/hIfaOHysFDaZgbfw+csGLA7P0kVk7oURetVyhmo02qUwRcZgUW5B45QzPY/g6S2bqY6rUaoatR6wBpZlquWVUZr1KuVjYFAuh5ZhKZsas1LK9NijAkgjle/5aSVG3sQPddU6hKVNA37YVQHGvBriSomd28W9ZahrOcQocL9qA4oqadaoa1nBCkdmAOWpBvpPLZVRatB6mISnWb7TsyaaqENGi1Vi5phSynurlJtreRtPbtUXAFEI2joKFNVqDo+UAn4i3K096W16YpvR7AU6VX/E7J3z301VqjMANLFbWI4wMRqtKvSqFUSlUoqKh7O4V0zKjXUk5WBdTcWBF9JHhtBMrEdilJ6eHFS9WwqVKpW+RSGCIq6AFgpJJJOUcJDBihseEsV74lvrIytWyrm5toPBf5n5ATKxLZiqDixt6cz8LyO2tY1LAaDT00gWT2Z7QFHaFKq5awYIQANe2K0he/3QagY/sz6Qnyrs6t2eIpm+UEgE24a8bdRofSfUuErrUprUXVXUMvkwuPkZWdPWIiGSIiAiIgIiICIiAiIgJwxsLnlOZBb943sdmYypfKVoVcp/WZCq+uYgQPlbebHdvjK9bX7Sq768e8xNvTh5CYtVfs5jTOxC/Zg+Ey7OtJ8qKfG/owP/AKfOZDYsWmE5ui+RHqpuJ0otbU+nnAl6FYye2Rs7tqTPmKhS40W9ilM1BnN+6rWyA9T4WNXoVVA1Osy8LisrXUlSOBBsddOIlZXtKqU1t+kLdUo5SHTijOr3C3LMvZggjUr2QOs4x9bDdhUFOrncsGQZSLJmzKPdADKK1YEWHFtQAFNNSpMrD1OMcRnFLn4fQT1ViB5TpRbj6fQT3zAyiE2q969NRwJB+RktjR3JB48WxSDx+Um6jEiwF5Krz2diAUA9JdN1qK9hVqpTWtWVrKjcl01105n4eUo+AqC1ragkfMyTwWLem2amzIeqkgwi0ba2ZTz4UlBRNZlWqi2AAugJB4A94j4cOcfX2GVQOG4h2CshVrUxma4FwDlBI11FusjKtdnbM7Fza12Nzbpr6/Gei12CZAxCkk5QbAk5b36+6vwkVhM8xcS19J6YxSNRqJgM1xobSjArY806qva4FlI8G6TviWzVNesiNoXzWPHML28v5iSZW7+YgcY572tPpvcPFdrszCP1o0wfNRlPzBnzPi+FhNyewbbDPhq2GY3/AEdlZPBKuYkDyZWP78qa9NpREQwREQEREBERAREQEREBNbe3raRpbL7NTbt6io2nFACxHhqF+BiJKufb5vkoovSsekRJHWo+ke6R6+s60gLG/GIkrWPboDPek8RDKQpPM6g8RNxlI0XmSAreE4iEQePTLil1v/Qlg/SAKZ5aREKicJiLE/tH6mSna21iISurbQtyvMV9ugX7nDxnMSKhq+8dS/uKB01P5z0o48sDdQDyHXTXynETnvVk8PV/G+PO980h6lXNUJ/WJljwjAjxiJ0jzPDEDWXj2H44U9pGmWP21N0C20JW1QEnlYKw/enMSpfTf0REOZERAREQERED/9k=" alt="Nico Hulkenberg Audi F1 2026">
+            <div class="caption">Nico Hülkenberg | Audi Revolut F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Nico Hülkenberg enters the 2026 season as the veteran spearhead for Audi's historic entry into 
+        Formula 1. After a standout 2025 campaign with Sauber—where he finally secured his maiden F1 
+        podium at the British Grand Prix—Nico has been rewarded with the lead seat in the Ingolstadt 
+        works project. Racing under his trusted number 27, Hülkenberg's vast experience is central 
+        to the development of the Audi R26 and its first-ever in-house power unit. Partnered with 
+        rising star Gabriel Bortoleto, "The Hulk" faces the pressure of leading a manufacturer team 
+        in a high-stakes regulation reset. While pre-season testing suggested that Audi is still 
+        finding its footing, Hülkenberg’s clinical qualifying pace and technical precision remain 
+        the team's most reliable asset as they begin their journey toward the front of the grid.
+    </p>
+
+    <div class="navigation">
+        <a href="perez.html" class="nav-button">← Previous: Perez</a>
+        <a href="bortoleto.html" class="nav-button">Next: Bortoleto →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

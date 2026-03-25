@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formula 1</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsv9tp5_4ykuziPP2ISVFpszH6aJ99bcRs6g&s">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        .top-bar { 
+            height: 5px;
+            background-color: #e10600;
+        }
+
+        .navbar {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            height: 70px;
+            border-bottom: 2px solid #e10600;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 60px;
+        }
+
+        .nav-item {
+            position: relative;
+            margin-right: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 25px 0;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            color: #e10600;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #1c1c1c;
+            min-width: 220px;
+            border-top: 3px solid #e10600;
+            display: none;
+            z-index: 10;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: none; /* Keeps names looking normal */
+        }
+
+        .dropdown a:hover {
+            background-color: #e10600;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        /* Specific style for the Shop link to ensure no underline */
+        .shop-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"></div>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/New_era_F1_logo.png" alt="F1 Logo">
+    </div>
+
+    <div class="nav-item">
+        Teams ▾
+        <div class="dropdown">
+            <a href="redbull.html">Red Bull Racing</a>
+            <a href="mercedes.html">Mercedes</a>
+            <a href="ferrari.html">Ferrari</a>
+            <a href="mclaren.html">McLaren</a>
+            <a href="astonmartin.html">Aston Martin</a>
+            <a href="alpine.html">Alpine</a>
+            <a href="williams.html">Williams</a>
+            <a href="haas.html">Haas</a>
+            <a href="audi.html">Audi</a>
+            <a href="racingbulls.html">Racing Bulls</a>
+            <a href="cadillac.html">Cadillac</a>
+        </div>
+    </div>
+
+    <div class="nav-item">
+        Drivers ▾
+        <div class="dropdown">
+            <a href="max.html">Max Verstappen</a>
+            <a href="hadjar.html">Isack Hadjar</a>
+            <a href="hamilton.html">Lewis Hamilton</a>
+            <a href="leclerc.html">Charles Leclerc</a>
+            <a href="norris.html">Lando Norris</a>
+            <a href="piastri.html">Oscar Piastri</a>
+            <a href="sainz.html">Carlos Sainz</a>
+            <a href="albon.html">Alex Albon</a>
+            <a href="gasly.html">Pierre Gasly</a>
+            <a href="colapinto.html">Franco Colapinto</a>
+            <a href="ocon.html">Esteban Ocon</a>
+            <a href="bearman.html">Oliver Bearman</a>
+            <a href="bottas.html">Valtteri Bottas</a>
+            <a href="perez.html">Sergio Perez</a>
+            <a href="hulkenberg.html">Nico Hulkenberg</a>
+            <a href="bortoleto.html">Gabriel Bortoleto</a>
+            <a href="linblad.html">Arvid Linblad</a>
+            <a href="lawson.html">Liam Lawson</a>
+            <a href="antonelli.html">Kimi Antonelli</a>
+            <a href="russell.html">George Russell</a>
+        </div>
+    </div>
+
+    <a href="shop.html" class="nav-item shop-link">Shop</a>
+
+</div>
+
+<div class="container">
+    <iframe width="600" height="500" src="https://www.youtube.com/embed/Sks_fMr2Yss?si=coJyWiKgAavPPXmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>

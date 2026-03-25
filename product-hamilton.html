@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <title>Lewis Hamilton 2020 Styrian GP Signed Helmet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #15151e;
+            color: white;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #1f1f27;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #38383f;
+            gap: 50px;
+        }
+
+        .product-image {
+            flex: 1;
+            background-color: #2b2b35;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        h1 {
+            color: #a259ff; /* Purple accent */
+            text-transform: uppercase;
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .price-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        .pay-button {
+            background-color: #e10600;
+            color: white;
+            border: none;
+            padding: 18px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+
+        .pay-button:hover {
+            background-color: #ff0800;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            color: #a259ff;
+        }
+
+        #payment-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 100;
+        }
+
+        #payment-popup {
+            display: none;
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 12px;
+            width: 340px;
+            text-align: center;
+            z-index: 101;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .confirm-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="data:image/jpeg;base64,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" alt="Lewis Hamilton 2020 Styrian GP Helmet">
+        </div>
+
+        <div class="product-details">
+            <h1>Lewis Hamilton Signed 2020 Styrian GP Helmet</h1>
+            <div class="price-text">$15,500.00</div>
+            
+            <p class="description">
+                A definitive piece of F1 history. This official 1:1 Bell HP77 replica features the iconic black and purple livery debuted during the 2020 Styrian Grand Prix. It carries the "Still We Rise" slogan and the Black Lives Matter logo on the crown. This unit is hand-signed by Lewis Hamilton on the iridescent visor and is one of only 30 units produced worldwide to commemorate his 7th World Championship season.
+            </p>
+
+            <button class="pay-button" onclick="openPayment()">Pay $15,500.00</button>
+            
+            <a href="shop.html" class="back-link">← Back to Shop</a>
+        </div>
+    </div>
+
+    <div id="payment-overlay" onclick="closePayment()"></div>
+    <div id="payment-popup">
+        <h2 style="margin-top: 0;">Secure Checkout</h2>
+        <p>Lewis Hamilton 2020 Styrian GP Signed Helmet</p>
+        <p><strong>Total: $15,500.00</strong></p>
+        <input type="text" placeholder="Cardholder Name">
+        <input type="text" placeholder="Card Number">
+        <div style="display: flex; gap: 10px;">
+            <input type="text" placeholder="MM/YY">
+            <input type="text" placeholder="CVV">
+        </div>
+        <button class="confirm-btn" onclick="processOrder()">Complete Purchase</button>
+        <button onclick="closePayment()" style="background:none; border:none; color:#777; margin-top:15px; cursor:pointer;">Cancel</button>
+    </div>
+
+    <script>
+        function openPayment() {
+            document.getElementById('payment-overlay').style.display = 'block';
+            document.getElementById('payment-popup').style.display = 'block';
+        }
+
+        function closePayment() {
+            document.getElementById('payment-overlay').style.display = 'none';
+            document.getElementById('payment-popup').style.display = 'none';
+        }
+
+        function processOrder() {
+            alert('Order Confirmed! Your 2020 Styrian GP Helmet will be shipped via secure priority courier.');
+            closePayment();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>Pierre Gasly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #005aff; /* Alpine Blue */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #002b5c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #ff31b8; /* BWT Pink Accent */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #005aff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Pierre Gasly</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Pierre Gasly Alpine 2026 Portrait">
+            <div class="caption">Pierre Gasly | BWT Alpine F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Pierre Gasly enters the 2026 season as the experienced cornerstone of the BWT Alpine F1 Team. 
+        Now in his fourth season with the Enstone squad, Gasly leads the team into a historic 
+        technological shift as they transition from Renault to Mercedes power units. Racing with 
+        his signature number 10, the Frenchman's resilience was tested during a difficult 2025 
+        campaign, but his faith in the "A526" project remains unshaken. Known for his tactical 
+        intelligence and clinical qualifying pace, Pierre is tasked with guiding the team back to 
+        the front of the grid under the new leadership of Executive Advisor Flavio Briatore. 
+        After securing a hard-fought point in the season opener at Melbourne, Gasly is determined 
+        to prove that Alpine’s early focus on the 2026 regulations will make them the "dark horse" 
+        of this new Formula 1 era.
+    </p>
+
+    <div class="navigation">
+        <a href="albon.html" class="nav-button">← Previous: Albon</a>
+        <a href="colapinto.html" class="nav-button">Next: Colapinto →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

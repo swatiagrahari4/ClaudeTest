@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title>Sergio Perez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #222; /* Cadillac Black */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #b39a5b; /* Cadillac Gold */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #222;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+            background-color: #b39a5b;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sergio Perez</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Sergio Perez Cadillac F1 2026">
+            <div class="caption">Sergio "Checo" Perez | Cadillac Formula 1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Sergio Perez makes a triumphant return to the Formula 1 grid for the 2026 season, joining the 
+        ambitious Cadillac project alongside Valtteri Bottas. After a brief hiatus from racing at 
+        the end of 2024, "Checo" was identified by the Indiana-based team as the perfect candidate 
+        to represent the "Team of the Americas." Carrying his iconic number 11, Perez's role is 
+        foundational; he is tasked with helping Cadillac navigate their debut year using 
+        Ferrari-supplied power units while the team builds toward its own General Motors engine for 
+        2029. With six Grand Prix wins and a reputation as a master of street circuits and 
+        strategic tire management, Perez's presence provides the stability Cadillac needs to 
+        establish itself in the pinnacle of motorsport. As the 2026 season begins, the Mexican 
+        veteran is hungry to prove that his race-winning instincts are as sharp as ever.
+    </p>
+
+    <div class="navigation">
+        <a href="bottas.html" class="nav-button">← Previous: Bottas</a>
+        <a href="hulkenberg.html" class="nav-button">Next: Hulkenberg →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

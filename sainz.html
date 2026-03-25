@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Carlos Sainz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        
+        h1 {
+            color: #00a0de; 
+           text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header-line {
+            border-top: 2px solid #041e42; /* Williams Navy Blue */
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        /* Image Styling */
+        .profile-frame {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .profile-frame img {
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Bio Text */
+        .description {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Navigation Buttons */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .nav-btn {
+            background-color: #041e42;
+            color: white;
+            text-decoration: none; /* No underline */
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #00a0de;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Carlos Sainz</h1>
+        <div class="header-line"></div>
+
+        <div class="profile-frame">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExIVFhUVFxUVFRUVFxUWEBUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0gHR0tLS0tLS0tLS0tLS4rKy0tLS0tLi0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xAA9EAABAwIDBQYEAwYGAwAAAAABAAIDBBEFITESQVFhcQYTIoGRoQcysfAUwdEjQlJy4fEVM0NigqIkssL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQMCBAX/xAAkEQACAgICAQQDAQAAAAAAAAAAAQIRAyESMUEEEyKBFDJhsf/aAAwDAQACEQMRAD8A18dMrClpV2nizVlGxZEkPiiCOGLrWolkwA7CI1icEVrUDGALxX4sY5tS9yw5MaGu/wBznFr7dBZnovZ8SnEcUkhNgxjnE8A1pJPsvlvHcUMz3yHIvcfIX0HlZJmokF9RbjlnrkT6fdlHjJNydN/D+pQJJLlNLrnkEDskvqQL2+/JAM7jqSh2TmN/TqgVj3S8SfXJFY022ibcL5nrZCYLm5XJ5rn7sgDpfrnmd+/+iGbhdb97kWPoPvyTAD3vEI0cwRixp19kB1OL5FICXHUdD1C6XvP+pYcrC36IENM45opoHjMJWbUWx8dG0nN/Xe7+6ktp7fI23C5FyFIwXCXSOs42++issdwoQhhAux9x4tWuF8suNvZY57op7TStlYyQgZ3OVrAjd0v9F10AeLtJB3XtfmCo4kYN2e6+f90SJxLtfDa98lqzFIqpHkEg6g2TDKi1jCXEnUlQn5KhEP3q4ZVG20i5AB+9XDIgbS5tIAOZFwvQdpK6BBdtcL0K6V0AE20kJJAz62gAupjDmq5pUyE6LIieAuuTWlMllATGPajteFmcZ7QxwC7nALE1vxLN7MblxKdCs1nxbxPusMmDfml2Yh0e4bf/AFDl84VLxoOK2fbjtO+qiY14ya64AJ1tqVh5Mz0CyUWkR2JO/NKye233r0TMjmDRdebDromt18k6cext5D+yQyOSkGpNdY8UQWQAms5orGEJmynXO5BpIeXpozT4oXOK0mB4C11i8X9beynLIo9lYYnN6K/D4C4gDM8Bx5ncFraLCbCx/oFfYdhDGtAbG1o1yAv7K3io220/Vcs8rl0d0MSiUmF4cA/TJTO0eENkpZImjxFu0zh3jRdt+trf3VsylF7hSnxXHVSUmnZudNUfPU0mfWxHmFZYYzaJ/lv7rnaWj7uplj/hkdb+V3ib7OCl9no/mPIj/ubfRej2keXLVgpqRVVZTLYvhBVXiFJktkDHrifMLOI5piYxJJJIASS6AiCJAAkkR0SYQgDiSSSAPrOJSo1CiU2MrIkSJJQAsf2r7Tthba93HQKzxvEAxpN9F4tjuK99I5xOV7DotxQmyJj2MyTPJc7LcNwVU2ZcqSgtctASKyoBZpnx3cslT3OZOvHcFZuaC03OllWyu3Kb7KeBuq4XLllxyBDmvz9Pqnudf73oTU4b80ho5ZFjiTqeG6nw0yy5UVhCyMyIKRDTkmykshH9lb4bC0eI2HVRlM6YYjmFYVvI8v1WzwmksMwqRuJRs0tdHj7UMaM/6rncZyOlShDRtaUNGqsWtHJeaSdtowfCDe3RXmFdqBLZo4ZlJwkltCUoyembBltCmVDwAqmvq9ghxNhslYXGe3x2iyIZaEnhvRGLlpCm1HbY74g4beZtQ2x2tlrh/uZoT1b/AOqZhOHBkYFszmeNzn+dvJRMMrXTnadm29zncXAyV60rtxppbPNzSTlojSQKsrtCFdSFUeLGwJVURMHUHxO6n6pidMfEepTQmMSSS6gAsAU1jFCgVpSoCgRpidyjy0buC0VPEEYwDgn2Jpox/wCHdwSWtNGOCSKCz3hkmaPNUWaqeKbPVdxWo8ClZujG9vsaswtB1yXmRqVo+2tRtEciVkgCVSL0YoK6S6cyIlEp4VawQhbWxPRWtgNrKoqmFriLWWvdCFTY1Sg2I1Skq2OL8EaOjHdNcSdp13cg3QfS6iSQEK9Df8po0LGezQnT07b+IC3Aarl9zZ6D9MuKozTvvkuBXk1HGWkhtjmqYMs5UjKzmnjcHstsMiyVg2NCw9mSmhihJ7O3HH4oBsoc0haMyB98Fb01CXaIUmEXPi19lhSVm3BkHD6aSf8Ay2kje5xs303qsxClka8sJNwXAgDcBkbk6nPLlqtjhsJjyAcOguFdw4N3rtsxeK3zloaT11JyW/dSJPA32zzvD6cbN9kG2RNsx+i0HZ+MCQW4rR1+HBpDctCDYAZf3t6KqZBsOu3dvUpTs6MeOmaTthQOfDFsnwk2cb2ysd/ksZifZdpe3u2kMsNoNFztDasctT4rXK9HwiobURGNwvbd+iZS4RGyQHaOWjSbgdEozcehTxxffaMHh9M2IEWsRkQeR0UoTpdqIu7qpG7idscPEAfrdVoeu2K0eVPuiwkmVLiz7tPRSTIoGJyDYPQrZMxztUgkuhMYk+OMlOijuVe4fQJNgiHR4eSrqloLblY0lFyVjHTLDZWKItPSBH/BKZHHZEukpG3ErDRLqml5SWuZPgatkvNBxWrGxqhkKjxWbJRbovjgpMzmMQ94bqu/AWVvtgpFl0+VlJYlFlR3NktohWhhUOriTWRoxLCmiFJW2UV8+1fp7p00SFs5WGvsqPJZH2qJODy7TRfWMlv/ABdp+ifc3IJVVBM6F9yPCcnW3gq/ZEHgHJzTo4GzvPioZFTs7ME+Ua8ojss52zusR7KrrKQtfxHFXD6EA3Dv1TqloI80oypjy4+S2DoXZWU+MqFEbKU0rMuzeN6L/CZhf6rQNpozwvqsVTyEFXlFXHeVGSLx2aWmp2Aqe2qFtPPj1VBBMTn/AECnCTLJZsbgmVeNnO/3yVT3g0OqtsdcGsLjruVHhbmuIc88+S0lo1/DQ9n37Dg4clpq+G47wcM/vksddgfdrsuq2NDVsdDY6+1kKjE77R5l27qf/KHHumX9XKjFUm9ra3arJs7hrhGP+AAPvdVgmXoQVRR4uR3NstHVSgVs92nogOmUaeW4WyZDXQkU5gQMs8NguVq8Pp1RYWzRaqgCwzcUTIorBKWQNRXGwVVWyLBRBnVycytuqKSROjmRQ7ND3oXFTtqEkUFm3Mqo8TzujmqUKplusNGscqZThuamxNyXA0XTgVg7JK9ic1RJ4rqS5ya3NJjSKqSkQHUR4LTQ04O5dnpQjmN4kYbGKewB9VCw/EHwnI3bvb+nAq67SR2sqJ9ObXXTHcdnnTuM24msjqWPaHWOaDI646lR8LH7JvRHkXPSTO7k5RsGD98UZrs0BGamzMWTonqxpiqGJ5B+is6OYZXU5RLRmaOlJHTfwVlTuz1VHTT25opxHZFxqfYdVFRbZVzSRL7QQ7bSPu6wGIxvZ4STbdYkH1C0dbirtAovdNf87gPr6K8fj2RlJz1Ez9JUOabbROeW1d3rvW/7Lh7nAPcAy+l/EeXIc1X4dTUTPE7PZ1vbcb8cs7KV/ikTpB3TbH5rgktI32+7IbUmLjkhHZ5dXT7Usjv4pJHeryfzQ+8Q3OuSeJJ9Ul3HkDy9DJSSQIanxjNJrEZkafFhZdYe+y0VDOsrSGyuqWRTkisNl/LLkq+fNMM6YZViy1EeWNAspkhUV5WkzDQ4OXUHaXEGSyNahvrFQuqSufiCnxMcqL6KoupYKp6Bys3vyUZqjvxzckPcnRaoLZEVhU2WiWlMUOtlyTInqNVOJWUijkUWLxF4y1CqIWE+GxvyWl7g3RW0oPI8R+atzpUc08PJ2V1NBsNDSLW3JSNU2oiLcjnz6qM4KbeysV8aIhKcxy5I1DutrZF6YbbzR2SWzUIH1XQ8ooVl9BVXba4z+wnMDrE2/TlkqaOUhXdFONnnpx91Jqtosny0yulpZHEnvgDYnTPkL3U7D+zrZDb8QDplm031OqPUUwcL2z5aqGynnafBHtHrYpqVlVxj2jRnsLH4dtzXMvnzN9+fJc7VtipqVzWAXYDsnm4hoHqR6KDTOr3Zd0Gji5+Q52soPbuGRlJHtuBc+YbVvls1jyB65+S3FXJIzmyxWN1/lHnwau2TrJWXZR4oyyc1q7sojGppAwkTEZrFyIKTGxdEUqMD4IlZQhBp2Ka2Nc2VHTiGOKY56M9qiyLlOviE7xCe5dCG4Jpk3EYXpLhYuLVmeBWXTrLtl0rrjA47JlFMrQyXCoIDYqzikyXLmjs7/Ty0SWSKVFKq4uXWzKFF7ovonXTnRqBSVCtoXgrLKRZGEfJGpoNpwHmeQGpQMWxARgBpBe4gDlfeUHBq4nvXON3F2yOTG7h1Oar7b4c30Yl6hcvbj2cxQ3e62m5QLI9VJmUIKJtdEd7UB7FOc1R3sWkyckRXJqNsWQyxbsk0Iv8ARTaLEA3Lcq4goZCdIXJo11PiUYF/qremxRpta1/bevOmvdoM+Azuryhw2r2dvu7C37zmtdbXQm6xLGl5Nxyt+D0GGvBGfnn98VhPiHiDXd3EDezi/wArFo9bn0VfNi02z4R7rO1ErnOJeSXHW6rjwtStkM2dSjxiNslZdC6uk4xqKwJiKxABYwrCnaoDVMp3rSyUbULLSCNGKBBKiOKnkmmdGONDZHKMUdwTWtXKzpQ1rU8RIjI0fYsklYMjinSRtpJV4k7Mo964x6FKU0PXa2efRJ7yyl08yppJUWnqFHJ8iuOXFl+hkJlK+4vo0b93QcUGqrNzchx3lRjibOieZJB3VwZzPAfmU2oxWQ2BOyNbC/uVXxi2ZQZJc1ZQjE5pZZSD1FSSRnmM781Y4dV7xv16qheU+nnIN/sqlqScJdMxFuLUkanvblGaqaGpvmPMbwrSlluuDLilB7PTw5lNEgsQpWKXbJcLFJMq0VzgmEKZJHqhBq1ZNoD3aE+kKmsjzVhBTBxARyoy42E7N4WG2dbM71p5m/s3fyn6JlBBa2SJi0gZE88ipK5zX9K6jFnlYm2XWtkV2VzXfMPvqhSPBcDzKINSF7B4wD8GD8rh0KFJTvbqFKdEDuXYyRle45rNAV5RI1YOYDqAUP8ADN3G3VJxY7BtR4ihmFw3ei6xylJMtBlhC5SWvVc16kNlUqOhSJV0+NqjtkU2lbdLibTDxxrpiJU2miupL6ewVYYycp0UhiSUt7M11W9sn7hgZGoGyriDDJHi4AA/icQ0eV8z5I7MIibnJLf/AGsH/wBH9FRo5kyhZTOedloJcdAMyrCDDGxeKU3dujach/OR9AptRiAY0tiaI2nU/vu6uOaqHzk/KL8zp/VYpIbdk2WYu10GgGg5AKJK8X/IapgY4/M49BkitYBoExAXNJ104BLYRiE0hICLIyyHZWdLRySuDIo3yPOjWNLnm2vhAuockJB0txH3ok0AJktlZUmI2OfqPzCrwwHquGIhO9U9oa07RsqHEGOGoVj3V81542QhT6XFpGaOPQqEvTwl+ro6oerkv2Vm1dTKI+mVXB2nfo5oP3yUkdpGHVin+Lk8U/sr+Tif8+ifFRlXmF0AGozWdj7Uxj9woc/bd4B2GAczqFn8bK+6X2P8nEvN/R6BttjG08hoG8nJYHtj2oEn7KI+HeeKzWI43NMfE8n6eihxRkm5V8WGON32zmy+oc1XSJMQ9grbC8NlqXtjhbtPO7cAN5O4KBAzIk71tfhLOxta5jyQXxPawjW+RsOdh7K/RzDKr4eVrRcCN5GrWPBd6EBZSrpnxuLJGljhq1wsV65H8Ni9rZ6asnje4B37XN+f8RYQb8dVOf2Jnmj7mtdFMQPBOy7Z2cLgjMfdkWM8Ra6y6SDqrjtV2YnoZA2Sxa6+w8fK4DjwKo7p2IeARo4p176gIYKeCikwsey3RNc8g2SIyTXZi+8LEoLwbU2FjlV7QZgKgpm3K1ODw3IWYw2dKnou6KGwUipbkjwRZIGIOsFdKiE5bKaQZlJRJqrxFJMnZmairJJLioElW53y5DidfJD2S7M6cEZrVMQIQA5uuTzRl2yVkDGrYdivh/NiMUkzJmRNY/uxtNc7adstcdCLABwz4rI7KvezHaaShEhiihe+TuyHytLzH3bifCLjW/IjLNAGixP4P18YvE+GbkHFkh5APGz/ANljsQ7P1cLtmWlmYecbi3yeAWnyK083xUxR0geJImgC3dtiHcu5uDiXX6OCkP8Ai7iZtYUzekT8+t5D7WS2BBwmpnwyikqAwxVNW9sMBe20zII2udLK1jswC4saCRwPBYlziSScycyTmSTqSd69lq8co8bozDIY4K5gvEHuDWukG6OQ6seBYt1GtjYFeV4lh0tPK6GaMxyMttNNri4uMwSCLHUGyAKtwvuTQ4jdf6qZZc2UARw5pXHQBHMY4LncjcSEgI/cFLYcpAY7iPMLuw7l7oodkYtK62nKkCN3EfVPEHFx8skUFgBCApMUN9dOH6p8bANAihaSEckOSdRTujkbIw2cwhzTwIXCF1rUxHtOBdtY5YBO6N21HlOIidpl/wDU2P3mnlmFbwdo6GSzzXRaPadpwY4sfo0g5gg2zXhuFYnLTyCWJ1nDIjVrhva4bwtEyuwmc95PBLE/VzYiTE477Wzb7JcR2av4iiD/AApgEzZC1zWxSAg7VnbiNTs3v5rxsLUdsu0bakRxQx93BCLRsyuTa1yBpl9VmGoQHQE4BIBOsmIe0IMbrHldFBQHb0wLGigzW0wSl0WSwJ227Z3jML0bCKewCEiikSO7sFR4xLYFaWo0WN7Sy2aU2ZbMhUVh2j1SVXNL4iko8goTQnJJLYhwTgkkgDtkrJJIA4Vy4SSQAiAcrKzxjG5qpsImIcYI+6Y+37RzLggSOv4iNx5m99V1JAFZZKySSAOWS2UkkALZTrJJIAVk5JJAHQntSSQgOroXUkxHHFdSSTAFIEyNqSSGAQJ1kkkgGFDcNUkkAEw2qMcjXjcR6b17LhbgWBw0IBSSWoDH1rsl512rqNUkk5dCMK5+aSSS5jZ//9k=" alt="Carlos Sainz">
+        </div>
+
+        <div class="caption">
+            Carlos Sainz | Williams Racing 2026
+        </div>
+
+        <div class="description">
+            Carlos Sainz enters the 2026 season as the strategic anchor of Williams Racing, bringing a wealth of championship-winning experience to Grove. After a legendary tenure with Ferrari that saw him secure historic victories, the Spanish driver has embraced the challenge of leading one of Formula 1's most storied teams into a new era. Known for his meticulous technical feedback and "Smooth Operator" race craft, Sainz's ability to maximize points in unpredictable conditions will be the cornerstone of the team’s upward trajectory. As the grid adapts to the revolutionary 2026 regulations, Carlos looks to leverage his elite intelligence and consistency to bring Williams back to the front of the pack, starting his campaign with a hunger for podiums and the determination to solidify his legacy as one of the sport's greatest all-rounders.
+        </div>
+
+        <div class="nav-container">
+            <a href="piastri.html" class="nav-btn">← Previous: Oscar Piastri</a>
+            <a href="albon.html" class="nav-btn">Next: Alex Albon →</a>
+        </div>
+ <a href="f1.html" class="home-link">Return to Home Page</a>
+
+    </div>
+
+</body>
+</html>

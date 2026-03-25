@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>Franco Colapinto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #ff31b8; /* BWT Pink */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #002b5c; /* Alpine Navy */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #005aff; /* Alpine Blue */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #005aff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Franco Colapinto</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Franco Colapinto Alpine 2026 Portrait">
+            <div class="caption">Franco Colapinto | BWT Alpine F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Franco Colapinto enters the 2026 season ready for his first full campaign at the pinnacle of 
+        motorsport. After a whirlwind 2024 debut and a developmental 2025 where he stepped into 
+        the Alpine mid-season, the Argentine star has secured his place as a permanent fixture on the 
+        grid. Driving the Mercedes-powered A526 under the number 43, Colapinto has earned praise for 
+        his "cat-like reactions" and growing technical maturity. With the massive commercial backing 
+        of Mercado Libre and the fervent support of a nation behind him, Franco is no longer just a 
+        replacement—he is a vital part of Alpine’s 2026 reset. Partnered with Pierre Gasly, he aims 
+        to translate his undeniable raw speed into consistent points finishes as Enstone begins its 
+        climb back toward the front of the field.
+    </p>
+
+    <div class="navigation">
+        <a href="gasly.html" class="nav-button">← Previous: Gasly</a>
+        <a href="ocon.html" class="nav-button">Next: Ocon →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

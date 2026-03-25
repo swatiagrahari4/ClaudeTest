@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>Gabriel Bortoleto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #ed1c24; /* Audi Sport Red */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #333; /* Audi Charcoal */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #ed1c24;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Gabriel Bortoleto</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEBAPDw8PDw8PEBAPDxAQDRAPDw8QFREWFhcVFRUYHSggGxolHRUWITEhJSorLi4uFx8zODMsNygtLisBCgoKDg0OGhAQFy0mHSUtKy0tLTcrLTcrKy0tNSsuLS0tKystLS0rLS0tLystLS0tKy0rKy0tKy0tKystLS0wLf/AABEIALEBHAMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIGAwQFB//EAEUQAAICAQIDBQUEBggDCQAAAAECAAMRBCEFEjEGE0FRYSIycYGRNKGxwRQjQmJz0QczUnJ0srPwJILxFRY1Y3WStLbC/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAMhEBAAIBAQQGCQQDAAAAAAAAAAECEQMSITFBBCIyM3HBBRM0UWFygZHhsbLR8IKhwv/aAAwDAQACEQMRAD8A+OmWSUTqysksSokREKsQIhARAiAiIgSWJIEma48ZHwCAfX4eHWGHNgDpiFRc7+np4yox67f79Jxs5B3bA8dsjy+sz7wY8uuN9zJtGGQI+EjY85xK+cZxkbYxuZGPj/0k2jDlEk41PXE5My5MEREoZmJMGSRFiSWAkzLJLAsSSSDKIiFIiIGcCIgWSIlQiIhViSIRYiICIkgWZVrkzGYsdjEkMX64Ix1/a/OGdgpHlj4zFxsPuz4wDvy8uW2AA6n5TnMtuJUZumTM1TBwdvxm9dluxl1iG29TSP2Q2xI9Z3eN9hMqtoZv2Q/s/s/2sAeE5zqRDvGhaYy+bFCDnwmec7Tdv+6ynmVA7KNw/IQCfITWeKcKfTsc7AHxGNojUiWbaNqxl558hM6ztjxE41bfr/vwmSNuROsOMuSQyzEzbJJEQEREgSGWSWAiSJBkDLMRMoUiIgZxEShERAQYiAiIhCIlgIiICYv0MykgcKuc4O+RsPIz7Xo7dHp1Tvu5R1UAFgvP08+s+f8ACey5P6Bqyeau+48642Xk5nG/keXG/iZuHFezoIL101Nax3suJcDy239NtpwtMc3r0q2jg2jhuu0OoYCu9HYfsi0HHyzPU1RrRSzuFUDJJOAB5z5Zp+BslivYKzcG2Na+yBjwIA3z4ffNo7Vsz6dK+XGwydySMb/GcbQ9dJtMb43uDiXa3QKxVL1cg9FyxzNV7Qa7T6um01nncDnxuGAHX2TOxoeF6hRmkadVO5BW1XO3QEeud/unsPwktWr2VotoHtMOp9CcDMzOzCRt2zEvkfMoG34fnFA3Jm3aPsill9oZ+VOtKjA5jyk4z8Zrmr0wqtsrByEcrk9duoPqDkfKemlomXh1NK1IzLimJmcwM6uKREQERJAsxMshgIkEsIoEykEsKREQMzAgyiUIiIQkMshgIiWAklkgWIiAkMshgfWOzaA6DTbbJp0esjpnvc259faB+A9Juuk06tWAZ8c7PdubNJpW0jUrdWOfu2LlSgYkkEYPMMknwn1fhutIQeg+PhPPfqvpaV4vjwNZpUXoMnPzz5zz+OUFTXvzDlBIAB289p2NddVaGU4YHIYcwHyM8i/SAurvysa/ZX9coIX9056fjOVszD01xtbnv6DSIyhlGDgZwdszr8YTlUj0jh3EFA5EIyOgyD+E6fFtSbNh4iYm3Jq2MPD0iEiwqpJLYVsEivlXJY/djznznjJB1OoI6G+0/Muc/fNj1na2/TG3TVJVsdrCG5gWUHpnB6zUWJJJJySSST1JPUmenRpMb5fO6TqxaIrHImJllnd5HHEERIEkskBJLECREQMxEglgIiIGcokiUWIiAkliEQSySwpERCEREBIYiBiRnafYuy/Fhdp6rQQWCBbB+8o5Wnx6fQ/6NkL6a/lOHS/I9Qa02PptOerGau/R5xZuR0FDe3yKC25xgE/HadSzR0OSvdkEeZB+mZyV38wIzyuuMg9R6ETFrhkkHB8f5TzznD301cFGnroVu7VQWO5xv/v+U6+puCJk+8dgPHJmGt16INz+c6Wnre5xY4wq+4vl6mcp4tbW0+b8a+0356ixgflt+U6c73HhjVagf+ax+u/5zoz317MPlX7UkRE0yETEiZSNIMYiIEiIgSJYAgZCIiAiIgckREoREQhEksBESwEkoiBJJYgSIM5tNpLLTitC/njoPiTsJYjI4J9A/onvHNqKc4ZglqjzA5lb/wDP1mo3cJZFdnZQUXLD97+yD5za+IcA1OmThuv4fp7vb4fTqL7KwLUFoRefmQbgMCMg+9nYZBkvScYlrTvs2iW9cW4YrjO6sNgynBnjv2ZvO/6Rkfwxmel2Z7V6biFfIxWrU49qkt7371Z/aX7x4z0mS1M8oDAnzxieG8TG59GNm2+GsJwRK2BdmsfxLHp8BPYTTBUyB4fEzlGjLEcw+M1ftx2uSlW0ulYNcQRZYuCtA9PN/wAJzrWbTiHSb1pXMtF41SLdVrWQ7VDn6ZDcvIjjPgfeP/IZ5E3vScL/AETges1FxTm1y6cU75bDHKDf9rlLOdzgMfHaanRpVCKbVIUqPbXmJXbbmA/HefQpGIw+Vaczl0Ine/7PDf1Ni2fut+rs+jdZ1LqmQ8rqVPkRibwyxmDSkzHMypERAREkBMhMZkDAREsCREsDOIiVCDEQAiIgJZJRAskTv8C4TZrL009TIruCQXblGFGTjxJxk4HkfIyxGdyPPM9LQ8C1dxXu6Hww5g7Dkrx58x2myuvC+G7JjiWsBwWOBRUw8uozn+8fUTxOK9otZqWy9rIvglRNaL6bbnoOpM7errHan7fyztTydl+zlVCg36mlbB7ykd4ufIKGUk/X4Tzr+I2AGtLia/ArSlG37qruBOku3h8ZkSDLmOUYTxcTDzyR+E2/sN28v4cRUwN2lJA5c4elS5LGvwPvseQ7FuU5GDnU5As5zGWoel2l/QzqrDw5XTTewa0cvs3KOYoX9sDPnv18MTt8K7acR045VvLqNuW8C4f+44b754RyPWYruwUkLkgZbIVcnqcZ28dpymsc3Stpjg3fX6zjmt0L68LjRq7V2NpgVb2R7TEZLd2OhI6YOdpopG2fDwE+qp2+0XC6k0+gQXajTolZ1GnDU6PWbe0dRXZ7RbOfaXJ32cAlZ814zxD9KvtvWinTC1i3dUBlqTPkCTjzOMDPgJmsfBbWmeMnEeMajU06bTWMpq0astQVApPMFGXP7TcqIuT4KJx6bX21DAII8AwziddKx6iVqSPUTcRhiXt0capswuqpUqPEDmAPwO4+RnqVabR2gLRqgMjaq4i5D/yWYYfIzTihjuz/ADm4v70w2vV9kHwWFbbdTQ/eKcjr3dmG2P7IJ67TXdVwq1AzAd4ie+yA81f8RCOZPmPnObh/F9Vpz+pudVGPYJ56yP7p2+k2zh3a3SakqmvpFNnurqayyhc/vA86D5kec1ilvgb3z+J63ab9GGosXTN3iIxHfcqjvT4+7hSAc4YAZ9es8mcpjEtESRIKZIiBcygzGIGcTAGZBoHLERKhEskBERARJECzkoG+ckHoCDgjIwZxEzYeIaCqvT1FUZL62pTUEuzB2uoNuOU7KU5SNv7W81XikvHVfulIx1+sys8/r8Jes3lnCY8dpDiej2e4Yup1K0uzIprvsZk5eblqoe0gc22SExv5zatX/R6oLcmqNXLzVtVetNlqahKBfZWzI6ggI9eGrD+8c7DmMm0QuGiYl5Zux7BqiO733agBTfRVotMLtRqtGzVLVfWhbYMbSSN+UVnrnb0dT2CqK6eupzbYmoSnUWVFF59O3ENVVZcwbODWtVa7bA9czO3C4fOCs43UHY7Ebgzau2/DaNPbp009fLW2lpJs75bBfYEAduUD2WDZz5nOMdJq9oGDLxHAFI3MtI2JPn+QlJ9kfD6ztcCvqrv09l45qU1NNlyY5uapbFZ1x45UEYmZ4rD0B2c13dd+dHqO65efn7lvc/t8vXk8ebGMb5nBquEaqlVa7SaqlHIVGt0t1aux6AFlGSfATZuC8N1Q4hbr7LqWDLrGq4o2opOmS56nWq9mJ2AJHsEZXb2dsTYezehvp4hxW8UaiijUWZqsK2cl+lN5a1aGTZ7WXlNYXJG4Em0r5Vq6XpbkuR6iRkLYjVtjzwwBxOMMM/ET6HwPWa2rg+tsvs1VbVm4G66y5btPZ/wooSkucgWM2oD8vgozjAmncRPfaevVlVV2vt0tzoqotzqiWJZyqAOfDsGx1whO7EmZHnMOn0nGE8T4Tlb3c+g+s4rD7OB6ATUo7Gm4RqLkNlSBkBYZNtSMSqqSFVmDNjnQbA7uo6kCedNv7PW0g6ex76qRp+/r1KWuELaewFhZWD75ySpVcv7K4Bzt4vau5H1lz12Lard2edTzBm7pA3teOGDDPjjPjMNS8qIiVCIiAiIgIiIHPKJIlQMREBERAkSyQKnUbA7g4PQ79D6T2uMcXs1R5nWuvBawrUHAe18c9jczE8x5VGM4AAAA3zOxtOmfVp+lvWlKI7nvLFrRmGAqktseuceOJ6na/h2m066FdNyvzUP316amu9bbhawYYXpy7b5wQ646EnUSjWrHwQfMD+X5yKcZHkdvhMNQPZP7p+6Y3NsD5iTOFw9DS6l6256nKEo6cy4JKWIUcb+asw+c5X4lqeUodTqO7Na1Mh1NvIalGFQrzYKgdAdhOhpNlE97g2g0t1VnfXLVb+sC81ioK1FatW4U/wBZludWUHICggbzW0mHQOi1JHeFL/1QdQSH5q1r94YO6qvNg9AC2Os4tdw56SFurVclwu6MD3djVNsNxhkYb46Gbe3GtBnDW3vU/eVthbTcKLdLp6ipZuUFlIs9obsKVznnbm8btTr9NeaDpw45K2FvPzZaxnLswJJ2LO58Ny3nJEyrxAAOgHynDcWB2AOemek5Tt039P5TCzDL/vYyyji35RnY9T6S6bofiZbjsANzgZ+njGnUY38z8Osxzac2n0zWuqVobLHYIiqvM7MegE7/ABjsprdIqvfpORGYKrArYOc9F9gnBPh5+Ey7OcSGj1dOq5OcVMeZQQCVZSp5c7cwByPh4dZtfF+1ejTTX1aV9VqbNVqF1DfpQJTSlbFfCE/3dgM43JOwBTkaTTx7Wo62DU6nvEBRW7+yzlU45k5WJHKcDKnY4mHE+L36sqdTc1pQFawQqJWCckKigKufHA3nrcX47RfU2dKE1DO5NoFLHlL1sCbAgdiAtiBegVgTkjM1q9N8j/pIrN29gg9ek42PufAGceSwx8vrtOXGX+Akzkerw3gl2rFnc8malVuVi4Nhbm5VXCkZPKfeKj1nS4rwfU6blN9TVizPISyMGwAcgqTtggg+PhPQ4Vx63Rd73QRu+Ra2DglSgcFgQCMhl5kPo5wQZxcd4/qdWireVKq/eIAGyjGtK/eYliMVjqTuSfGOY8SIiVCWSWAiIgIiIHPAiUSokREBERAkkpkMD1eBcD1OrL/o9Ys5AOfN1NeM9PfYZ6eE5uN9n9XoiqavTPp3cFk5uUixVIzhlJBxkePiPOdzsp2iTSVsjaY3FrWsz361YB07VDrW2SC5YeqrOLtFxgaptOVR0XT6WnTYe3vXd0zzWlsD2mJydvCVHinrg7hh1nSY49k+G30nosmRjxG4nQ1I3z8j8ZmzUPb1enrRNO9YbltqJOTk8wPX6EbCcCkGdu4E6HSMQQVayv5NnlP0rnREunO516TWIvujGYif9QzIkxJnz+spnTLgonVs2JHTxH8p2Zw6sDl36fhJIyYYGegmOn6fM/jM26ekw03u/M/jM81cshhjjrMD9B98SMXaenwehGqsLojkuVBZA3KAoO2envTyWns8LONOd8Zd2+5R+U4as9V7ugRE6u/3S17T7tnGBknHl5CctAyxPrgTh0p3PwJnPUMAevX0yZuHjllaRuT0E7GnUiuxmrYi2t0RsMFViRgjA38sfvTi79q3Q1nlZd1OAcHGM4O3jO1qeKagphr7cYxgWMoO3iB18poeNEpPjtv5dPlJCEsksCSySwEREDnlkllRIgxAQIiBDIZZIGx9l6amrtZ9N3zqbeVmvrqrXlp7wbOw6Cuxid9vDpPKQS8P4g9SOg5eV+8zzDp3lFlDY3/s2t8wPLBx5sH49JpDG23UdJ0rfbIXG5IH1OJ3uYZ8szqMf1iHydD9GEzduvFunG9N/wANZ5IEZfIcrAfgSJqStNys0hsDBnPKwII8CpmocS0jUWvWpLKpXGeuGUMB8s4+U46NuMPpektKcxflw/VQZCfLee5w3V16Omq00V3aq8NYvejmSmoMQpx5nBPh47z1OG8SHEGenU6WjlWtna+sGpqVHjkk/j8jOk6mIzjc81Oixa0U2+tPLE8/fP8AcNM5/UCYWMSD7QIm58X4m2gsFGl01FaciuLWBse4Ee9nI8QRvnpLptYNfTedXRpwtCBv0hQanVidlzv1wfED03mducbWNzcdErN/VRfreG77+eGmvaBjJ+AzMKDtt5n8ZuPF+INw/ua9JTSiPSlgvI7x7iVGTzenz6jGJzcDoq1tIt1VFS2d8yV2KxqOpfBYqwHX6noemJJ1cb8bmq9Ci1vVxfr+E4+/43tMJUdSM+plJnu3dqL6y1aabS0KhKGrui3KQcEEgjP0EwaunXV2NTUKNXUpsauvau9B1KjwP8x1zsnUmOMbnOOjUtu075t7sYz4fnDW2sntUUk0VldvZz18ST1/34zwwQSM5xkZA6keOJtBrR1Hdn2CNiAQMDbH5TGrPB39H1iZtPwaoEYMynHN0PlvOwhyR5D78dfyk1VYW2wA7Z29MjOPvlQgAkdAMD851rweDUrs2mPiqDLk+U2bs7xTSUUak6iqu6znq7qs0U2NcrVXhkLvvWgcUMWXfIGAZrunrbACgs9jBUUblmY4UD1yZsmm7Ca8qC6VUtzFMXWge0XprQApzDLWXKnoVbOMTXJhq3FL0svusReRLLGdVwF5QTnGATj4ZM6s7/GuGPpbTW5B6lWHRl5iPkdumTjM6EgREQECJZQiIgc8sRKiGIiAiIgSSIgbf/Rz9or/AIr/APxrJrmu6H4n8YiagYN+zOOz31/vL+IiJizVeLfNJ4TWuP8A2iz4V/6SxE49H7b7XpPuI8f5cnH/AH9P/gtL/pzu9mvs3FP8KP8ALbETrfsx9P1eGntM/wCX7ZXtX/VcO/wa/wCVJx6f/wAI138ej/PVETMdiPHzdL+0X+Wf2naT7Dwv+FZ+Fc7Gi+w8M/8AUx/qNETE9n6z5u1e/n5a/wDLxu0n2vU/xnnf7B/bE/h2/gIiat3f0ebS9sj5vNrT9ZsPBvs6fF/87SxM6vZb9Hd7Ph5w17if9e/xX/KJD7g+J/GIm6dl5NfvLeMu/ov67Tf4ij/UWfU+KfZD/i7v/sDxEs8XJoX9JX2in+E/+q01GIlQiIgIEsQEREo//9k=" alt="Gabriel Bortoleto Audi F1 2026">
+            <div class="caption">Gabriel Bortoleto | Audi Revolut F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        Gabriel Bortoleto enters the 2026 season as one of the most exciting young prospects in 
+        Formula 1. After a stellar debut year with Sauber in 2025, the Brazilian sensation has 
+        cemented his place as the future of the Audi Revolut F1 Team. Racing with his chosen number 5, 
+        Bortoleto made history at the 2026 season opener in Melbourne by finishing P9, securing 
+        Audi’s first-ever world championship points in its debut race. As the first Brazilian 
+        driver to compete full-time since Felipe Massa, Gabriel carries the hopes of a nation 
+        while navigating the immense pressure of a manufacturer works project. Partnered with 
+        the veteran Nico Hülkenberg, Bortoleto's blend of raw speed and mature race management 
+        has already proven that he is more than capable of leading the Four Rings toward their 
+        ambitious goal of championship contention by 2030.
+    </p>
+
+    <div class="navigation">
+        <a href="hulkenberg.html" class="nav-button">← Previous: Hülkenberg</a>
+        <a href="linblad.html" class="nav-button">Next: Lindblad →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

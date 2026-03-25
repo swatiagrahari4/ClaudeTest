@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <title>Arvid Lindblad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #0031d2; /* VCARB Blue */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0031d2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #00d2ff; /* VCARB Cyan Accent */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #0031d2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #0024a1;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Arvid Lindblad</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Arvid Lindblad Racing Bulls 2026">
+            <div class="caption">Arvid Lindblad</div>
+        </div>
+    </div>
+
+    <p>
+        Arvid Lindblad enters the 2026 season as the most anticipated rookie in years, making history 
+        as the youngest British driver to ever start a Grand Prix. After a dominant rise through the 
+        Red Bull Junior Team—culminating in a standout 2025 Formula 2 campaign—Lindblad has earned 
+        the second seat at Racing Bulls alongside Liam Lawson. Racing with the number 41, the 
+        18-year-old Anglo-Swede represents the new "youth-first" philosophy at VCARB. Known for his 
+        clinical overtaking and maturity beyond his years, Lindblad has already impressed the team 
+        during 2026 pre-season testing, adapting quickly to the high-electrical-output power units. 
+        As he prepares for his debut in Melbourne, Arvid carries the momentum of a successful 
+        "Red Bull Moto Jam" showcase in India, ready to prove he belongs at the pinnacle of the sport.
+    </p>
+
+    <div class="navigation">
+        <a href="bortoleto.html" class="nav-button">← Previous: Bortoleto</a>
+        <a href="lawson.html" class="nav-button">Next: Lawson →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <title>Max Verstappen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3671C6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header-line {
+            border-top: 2px solid #1a1a1a;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .profile-frame {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .profile-frame img {
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .nav-btn {
+            background-color: #3671C6;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.8;
+        }
+        
+        .disabled {
+            background-color: #cccccc;
+            cursor: default;
+        }
+        
+        .disabled:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Max Verstappen</h1>
+        <div class="header-line"></div>
+
+        <div class="profile-frame">
+            <img src="data:image/jpeg;base64,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" alt="Max Verstappen">
+        </div>
+
+        <div class="caption">
+            Max Verstappen | Oracle Red Bull Racing 2026
+        </div>
+
+        <div class="description">
+            Max Verstappen enters the 2026 season as the undisputed benchmark of Formula 1 excellence. As the reigning multi-time World Champion, the Dutchman's partnership with Red Bull Racing has redefined dominance in the modern era. With the introduction of the 2026 technical regulations and the debut of the Red Bull-Ford Powertrains engine, Verstappen's role as the team's technical North Star is more critical than ever. Known for his uncompromising speed, clinical precision, and an iron-clad racing temperament, Max continues to break records with a relentless hunger for victory. For Verstappen, 2026 is not just another title defense; it is the ultimate test of his ability to lead a team through a technological revolution and maintain his seat on the throne of the racing world.
+        </div>
+
+        <div class="nav-container">
+            <a href="" class="nav-btn disabled">Previous: None</a>
+            <a href="hadjar.html" class="nav-btn">Next: Isack Hadjar →</a>
+        </div>
+<a href="f1.html" class="home-link">Return to Home Page</a>
+
+
+    </div>
+
+</body>
+</html>

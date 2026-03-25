@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>George Russell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #00a19c; /* Mercedes Petronas Teal */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #00a19c;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #00a19c;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #007a76;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>George Russell</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="George Russell Mercedes 2026 Portrait">
+            <div class="caption">George Russell | Mercedes-AMG PETRONAS F1 Team 2026</div>
+        </div>
+    </div>
+
+    <p>
+        George Russell enters the 2026 season as the definitive spearhead of the Mercedes-AMG PETRONAS 
+        F1 Team. After three seasons alongside Lewis Hamilton, Russell has now fully embraced the 
+        role of team leader, guiding the development of the W17 chassis into F1's bold new 
+        technological era. Known for his relentless work ethic and "no-stone-unturned" approach, 
+        George’s technical feedback has been critical in optimizing the complex energy recovery 
+        systems of the 2026 power units. With a proven ability to extract maximum performance 
+        in qualifying and a tactical mind for race strategy, Russell is widely considered a 
+        primary title favorite as Mercedes looks to reclaim its position at the top of the 
+        world championship standings.
+    </p>
+
+    <div class="navigation">
+        <a href="antonelli.html" class="nav-button">← Previous: Antonelli</a>
+        <a href="alonso.html" class="nav-button">Next: Alonso →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>

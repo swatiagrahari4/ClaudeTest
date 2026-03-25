@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>Fernando Alonso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #00665e; /* Aston Martin Green */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00352f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #cedc00; /* Lime Accent */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            text-align: justify;
+            font-weight: normal; 
+            margin-bottom: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+
+        .nav-button {
+            background-color: #00665e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #004d46;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fernando Alonso</h1>
+    
+    <div class="image-center">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Fernando Alonso Aston Martin 2026 Portrait">
+            <div class="caption">Fernando Alonso: Primary Driver Aston Martin Armaco F1 Team</div>
+        </div>
+    </div>
+
+    <p>
+        Fernando Alonso enters the 2026 season as the grid's most experienced warrior, now 
+        embarking on a high-stakes partnership with Honda and technical guru Adrian Newey. 
+        Driving the AMR26 under his legendary number 14, the two-time World Champion is the 
+        heart of Aston Martin’s push for the summit of Formula 1. Despite a tumultuous start to 
+        the year in Melbourne—where severe vibrations from the new power unit forced a dual 
+        retirement—Alonso remains the team's most vital asset. His "lightning reflexes" were 
+        on full display during the opening lap in Australia, and his technical feedback is now 
+        pivotal as the team works frantically to optimize energy management and reliability 
+        ahead of the Japanese Grand Prix. For Alonso, 2026 represents the ultimate "last 
+        chance" to add to his 32 career victories in an era defined by total technical reset.
+    </p>
+
+    <div class="navigation">
+        <a href="russell.html" class="nav-button">← Previous: Russell</a>
+        <a href="stroll.html" class="nav-button">Next: Stroll →</a>
+    </div>
+
+    <a href="f1.html" class="home-link">Return to Home Page</a>
+</div>
+
+</body>
+</html>
